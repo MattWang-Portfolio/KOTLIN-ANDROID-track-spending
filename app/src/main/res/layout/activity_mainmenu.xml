@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECE9D4"
+    tools:context=".activity.MainMenuActivity">
+
+    <TextView
+        android:id="@+id/mainMenuPetCoinTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="40dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/petNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="100dp"
+        android:text="XXX的寵物"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="426dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainMenuPetButton">
+
+        <ImageButton
+            android:id="@+id/openRecordsImageButton"
+            android:layout_width="104dp"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/query_icon"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/openBookkeepingImageButton"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/records_icon"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/openStoreImageButton"
+            android:layout_width="104dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:background="#00FFFFFF"
+            android:minHeight="48dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/store_icon"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/mainMenuPetButton"
+        android:layout_width="236dp"
+        android:layout_height="229dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/petNameTextView"
+        app:srcCompat="@drawable/box"
+        tools:adjustViewBounds="true"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/mainMenuGrowPointTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="成長值:0"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="49dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toEndOf="@+id/mainMenuGrowPointTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pet_coin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
